@@ -1,5 +1,12 @@
-Installation:
-    # ffprobe (linux):
+Abstract
+--------
+
+This tool meant to analyze video stream using ffprobe tool
+
+
+Installation
+------------
+    ffprobe (linux):
         Run the following commands:
             1. sudo apt-get update
             2. sudo apt-get dist-upgrade
@@ -13,7 +20,8 @@ Installation:
             2. use virtual_env- navigate to the project directory and run "source virtual_env/bin/activate"
 
 
-Running the web service:
+Running the web service
+-----------------------
 
     Once you set your Python environment go to the "web_service directory" and run "python runserver.py"
     The server will listing to 8001
@@ -29,7 +37,10 @@ Running the web service:
 
 
 
-Question #1
+Questions
+---------
+
+Question #1:
 
     1. Retrieve the video resolution:
         flags:
@@ -56,5 +67,5 @@ Question #1
         command: ffprobe -show_frames -select_streams v -show_entries frame=pkt_size -print_format json sample.mov
 
 
-Question #2
-    Output located in "/tmp/ffprobe/"
+Question #2:
+    Output located in "/tmp/ffprobe/" directory
